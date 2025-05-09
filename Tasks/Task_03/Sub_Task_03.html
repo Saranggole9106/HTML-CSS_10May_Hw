@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokemon Blog</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+      color: #2e2e2e;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: lightcoral; 
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      border-radius: 8px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #cdeffd; 
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    aside {
+      grid-area: sidebar;
+      background-color:  #fff176; 
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: lightsalmon;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    h2, h3 {
+      color: #1b1b1b;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      ⚡ My Awesome Pokémon Blog
+    </header>
+
+    <main>
+      <h2>Welcome to My Blog</h2>
+      <p>For over two decades, Pokémon has remained one of the most beloved franchises in the world. What began as a simple Game Boy title in the late '90s has grown into a global phenomenon, spanning video games, trading cards, an anime series, movies, mobile apps, and even fashion collaborations. But what makes Pokémon so timeless?</p>
+    </main>
+
+    <aside>
+      <h3>Sidebar</h3>
+      <ul>
+        <li>🔗 Recent Posts</li>
+        <li>📁 Categories</li>
+        <li>📨 Subscribe</li>
+      </ul>
+    </aside>
+
+    <footer>
+      © 2025 Samarth's Blog | Built with 💻 and ☕
+    </footer>
+  </div>
+</body>
+</html>

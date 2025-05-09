@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layouts</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    hr {
+      margin: 40px 0;
+    }
+
+    /* ✅ Exercise 1 */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* ✅ Exercise 2 */
+    .Box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+
+    .box1 {
+      padding: 50px;
+      width: 150px;
+      height: 200px;
+      border-radius: 4px;
+      text-align: center;
+      border: 2px solid black;
+      background: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ✅ Exercise 3 */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* ✅ Exercise 4 */
+    .equal-columns {
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1 1 250px;
+      background-color: #e2f0f7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* ✅ Exercise 5 */
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 200px;
+      background: #fce4ec;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .main {
+      flex: 3;
+      min-width: 300px;
+      background: #f3f4f6;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* ✅ Exercise 6 */
+    .button-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .button-row button:last-child {
+      margin-left: auto;
+    }
+
+    /* ✅ Exercise 7 */
+    .vertical-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 200px;
+    }
+
+    /* ✅ Exercise 8 */
+    .order-boxes {
+      display: flex;
+      gap: 20px;
+    }
+
+    .order-boxes div:nth-child(1) {
+      background: #fde68a;
+      order: 2;
+    }
+
+    .order-boxes div:nth-child(2) {
+      background: #bbf7d0;
+      order: 1;
+    }
+
+    .order-boxes div {
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* ✅ Exercise 9 */
+    .grow-boxes {
+      display: flex;
+      gap: 20px;
+    }
+
+    .grow-boxes .box {
+      flex-grow: 1;
+      padding: 20px;
+      background: #e0f2fe;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .grow-boxes .box.grow-more {
+      flex-grow: 2;
+      background: #bae6fd;
+    }
+
+    /* ✅ Exercise 10 */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔹 Example Layout Goal:</h2>
+  <div class="card-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 1: Horizontal Navigation Bar:</h2>
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <hr>
+
+  <h2>🔹 Exercise 2: Center a Box:</h2>
+  <div class="Box">
+    <div class="box1">Welcome to HTML, CSS World</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 3: Responsive Card Row</h2>
+  <div class="card-container">
+    <div class="card">Responsive Card A</div>
+    <div class="card">Responsive Card B</div>
+    <div class="card">Responsive Card C</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 4: Equal Height Columns</h2>
+  <div class="equal-columns">
+    <div class="column">Short content.</div>
+    <div class="column">More content that stretches a bit more.</div>
+    <div class="column">Even more content to make this column grow higher. Flex stretch keeps them equal height!</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 5: Sidebar + Main Content</h2>
+  <div class="layout">
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Links and tools</p>
+    </div>
+    <div class="main">
+      <h3>Main Area</h3>
+      <p>Main content goes here in more detail.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 6: Button Row with Right Aligned Button</h2>
+  <div class="button-row">
+    <button>Save</button>
+    <button>Edit</button>
+    <button>Cancel</button>
+    <button>Delete</button>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 7: Vertical Flexbox Navigation</h2>
+  <nav class="vertical-nav">
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <hr>
+
+  <h2>🔹 Exercise 8: Flex Order Change</h2>
+  <div class="order-boxes">
+    <div>Box 1 (Order 2)</div>
+    <div>Box 2 (Order 1)</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 9: Grow One Box More Than Others</h2>
+  <div class="grow-boxes">
+    <div class="box">Box A</div>
+    <div class="box grow-more">Box B (Grows More)</div>
+    <div class="box">Box C</div>
+  </div>
+
+  <hr>
+
+  <h2>🔹 Exercise 10: Profile Layout</h2>
+  <div class="profile">
+    <img src="/Task_03/snorlex1.png" alt="User Photo">
+    <div class="profile-info">
+      <h3>Sam D</h3>
+      <p>Full-stack Developer ☕</p>
+    </div>
+  </div>
+
+</body>
+</html>

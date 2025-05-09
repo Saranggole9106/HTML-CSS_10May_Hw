@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            
+            summary::before🔺{
+                transform:rotate(90deg);
+            }
+            details{
+                padding:20px;
+                box-shadow: 100px;
+                border-radius: 10px;
+
+            }
+            body{
+                background-color:rgb(252, 252, 108);
+                font-style: oblique;
+                word-spacing: 2px;
+                font-size:25px  ;
+            }
+            h1{
+                text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            }
+            details[open] summary{
+                color: #1abc9c;
+            }
+            @keyframes fadeIn{
+                from{opacity: 0; transform: translateY(10px);}
+                to{opacity: 1; transform: translateY(0);}
+            }
+            details[open]p,
+            details[open]ul{
+                animation: fadeIn 0.5s easeforward;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>📗Student Dev Handbook</h1>
+        <details name="notes">
+            <summary> HTML Basics Summary </summary>
+            <p>
+                HTML, which stands for HyperText Markup Language, is the foundation of web pages, defining their structure and content. 
+                It uses elements and tags to specify how content like text, images, and links should be displayed in a browser. 
+                HTML provides the basic framework for websites, organizing information into headings, paragraphs, lists, and more. 
+            </p>
+        </details>
+        <details name="notes">
+            <summary>CSS Basics Summary</summary>
+            <p>
+                Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). 
+                CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+            </p>
+        </details>
+        <details name="notes">
+            <summary>JavaScript Basics Summary</summary>
+            <p>
+                JavaScript is a dynamic, interpreted programming language primarily used to add interactivity to websites. 
+                It's lightweight, cross-platform, and runs directly in web browsers without needing compilation. 
+                JavaScript manipulates the Document Object Model (DOM) to modify HTML and CSS, enabling features like form validation, animations, and dynamic content updates. 
+                It supports object-oriented programming concepts and uses a syntax similar to Java and C. 
+                While often associated with client-side web development, JavaScript can also be used server-side with Node.js.
+            </p>
+        </details>
+        <details name="notes">
+            <summary>How To Make A Website Attractive</summary>
+            <p>
+                <ol>
+                    <li>Keep your design balanced.</li>
+                    <li>Compartmentalize your design by using grids</li>
+                    <li>Pick two or three base colors at most for your design.</li>
+                    <li>Try to make the graphics go well together.</li>
+                    <li>Improve your website's typography.</li>
+                    <li>Make elements stand out by adding white space around them.</li>
+                </ol>
+            </p>
+        </details>
+        <details name="notes">
+            <summary>Bonus Point On web development</summary>
+            <p>
+                In web development, a "bonus point" typically refers to a feature or aspect that provides an added benefit, especially when it comes to improving the user experience or the website's functionality. 
+                These can range from technical skills like understanding SEO to design choices like using a personal headshot in a portfolio.
+            </p>
+        </details>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Feed</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+    img{
+      width: 500px;
+      height: 350px;
+    }
+
+    .feed {
+      display: grid;
+      grid-template-areas:
+        "profile newsfeed sidebar";
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+    }
+
+    .profile {
+      grid-area: profile;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .newsfeed {
+      grid-area: newsfeed;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #3498db;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .feed {
+        grid-template-areas:
+          "profile"
+          "newsfeed"
+          "sidebar";
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        font-size: 1.5rem;
+      }
+
+      .profile, .newsfeed, .sidebar {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Social Media Feed
+  </header>
+
+  <div class="feed">
+    
+    <div class="profile">
+      <h3>Profile</h3>
+      <p>Username: Kirito</p>
+      <p>Bio: A Gamer . Love sharing moments from my adventures!</p>
+    </div>
+
+    
+    <div class="newsfeed">
+      <h3>News Feed</h3>
+      <div>
+        <h4>Post 1</h4>
+        <p>Exploring the world and learning new experiences.</p>
+        <img src="https://miro.medium.com/v2/resize:fit:960/1*jxty3_a_NEv6bo1Hfjm5Mw.jpeg">
+      </div>
+      <div>
+        <h4>Post 2</h4>
+        <p>Found Pikachu in the wild.</p>
+        <img src="https://preview.redd.it/just-realized-that-in-ep39-a-wild-pikachu-has-a-3-spikes-at-v0-u6mpm249m0ob1.png?auto=webp&s=5461413d916f75072543d63513d1aca73d8ac7b4" alt="Image for Post 2" />
+      </div>
+      <div>
+        <h4>Post 3</h4>
+        <p>Some samurai action.</p>
+        <img src="https://www.denofgeek.com/wp-content/uploads/2020/07/Ghost-of-Tsushima-unlock.jpg?w=1024">
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li>Friends</li>
+        <li>Messages</li>
+        <li>Notifications</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Social Media Platform | All Rights Reserved
+  </footer>
+
+</body>
+</html>

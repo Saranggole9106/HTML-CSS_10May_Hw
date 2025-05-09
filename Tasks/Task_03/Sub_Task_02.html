@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Photo Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: lightcyan;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Responsive Photo Gallery</h1>
+  <div class="gallery">
+    <img src="images-1.png" alt="Image 1">
+    <img src="Bulbasaur.png" alt="Image 2">
+    <img src="giglipuff.png" alt="Image 3">
+    <img src="snorlex1.png" alt="Image 4">
+    <img src="squrtle.png" alt="Image 5">
+    <img src="triop1.png" alt="Image 6">
+  </div>
+</body>
+</html>

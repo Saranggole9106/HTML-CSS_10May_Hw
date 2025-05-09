@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samarth's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+      padding: 10px;
+      background-color: #e0e0e0;
+    }
+
+    .header {
+      grid-area: header;
+      border-radius: 8px;
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #292929;
+      color: #fff;
+      padding: 20px;
+      position: fixed;
+      top: 80px;
+      left: 10px;
+      bottom: 60px; 
+      width: 230px;
+      overflow-y: auto;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: #ffffff;
+      padding: 20px;
+      margin-left: 200px; 
+      overflow-y: auto;
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #1f1f1f;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">👨‍💻 Samarth's Portfolio</header>
+    <nav class="sidebar">
+      <ul style="list-style: none;">
+        <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Projects</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Skills</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <h2>Welcome to My Creative Space</h2>
+      <p>Welcome to my creative space—a hub for innovation, problem-solving, and technology. As a computer science student with a passion for building impactful software, I thrive at the intersection of logic and creativity. Whether it's developing web applications, exploring machine learning models, or contributing to open-source projects, I’m always eager to learn and push boundaries..</p>
+    </main>
+    <footer class="footer">© 2025 Samarth. Crafted with HTML & CSS.</footer>
+  </div>
+</body>
+</html>

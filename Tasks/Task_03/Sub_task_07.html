@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      background-color: rgb(244, 244, 90);
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-section {
+      background-color: lightyellow;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .menu-item span {
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
+
+      .menu-section {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hot & Spicy 🌶️</h1>
+  </header>
+
+  <div class="menu">
+    
+    <div class="menu-section">
+      <h2>Starters</h2>
+      <div class="menu-item">
+        <span>Bruschetta</span>
+        <span>$8.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Garlic Bread</span>
+        <span>$5.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Stuffed Mushrooms</span>
+        <span>$9.49</span>
+      </div>
+    </div>
+
+    
+    <div class="menu-section">
+      <h2>Main Dishes</h2>
+      <div class="menu-item">
+        <span>Grilled Salmon</span>
+        <span>$22.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Steak Frites</span>
+        <span>$28.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Vegetable Lasagna</span>
+        <span>$18.99</span>
+      </div>
+    </div>
+
+    
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-item">
+        <span>Chocolate Lava Cake</span>
+        <span>$7.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Tiramisu</span>
+        <span>$6.99</span>
+      </div>
+      <div class="menu-item">
+        <span>Panna Cotta</span>
+        <span>$5.99</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Hot & Spicy | All Rights Reserved
+  </footer>
+
+</body>
+</html>
