@@ -29,6 +29,13 @@ part 10:
 <img width="1470" alt="Task3pt10op1" src="https://github.com/user-attachments/assets/b95dfb9e-0c0e-441f-80c5-f5699123be7c" />
 <img width="1468" alt="Task3pt10op2" src="https://github.com/user-attachments/assets/94d24e1e-a2f1-4a75-9a9f-ca1fd2d72f97" />
 <img width="1464" alt="Task3pt10op3" src="https://github.com/user-attachments/assets/65d2eb54-d6fb-4e18-9edc-61052c68458d" />
+Task 4 output:
+<img width="1470" alt="Task4op1" src="https://github.com/user-attachments/assets/d3d1b869-0563-4989-8f99-b1119b6800bd" />
+<img width="1470" alt="Task4op2" src="https://github.com/user-attachments/assets/8623011c-187f-4bc5-91b2-3978d699f19f" />
+
+
+
+
 
 
 
